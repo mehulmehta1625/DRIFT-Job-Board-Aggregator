@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NIGHTSHIFT — Tech Jobs Open to India</title>
+<meta name="description" content="Search tech jobs open to India — remote & on-site, by city and level. Infinite scroll, filters, saved listings — pure HTML/CSS/JS." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <div class="brand"><span class="dot"></span> NIGHTSHIFT · India tech jobs</div>
+    <h1>Tech jobs, <em>open to India</em>.</h1>
+    <p class="sub">Remote-first and on-site roles across Indian cities — filter by city, level, and stack, and stash the good ones. Live from The Muse.</p>
+  </div>
+</header>
+<div class="bar">
+  <div class="bar-in">
+    <label class="search"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3 M11 19a8 8 0 100-16 8 8 0 000 16z"/></svg>
+      <input id="q" type="search" placeholder="Filter loaded jobs — role, company, stack…" aria-label="Search loaded jobs" autocomplete="off" /></label>
+    <select class="fld" id="city" aria-label="City"></select>
+    <select class="fld" id="level" aria-label="Experience level">
+      <option value="">Any level</option><option>Internship</option><option>Entry Level</option><option>Mid Level</option><option>Senior Level</option><option>Management</option>
+    </select>
+    <button class="toggle" id="saved" type="button" aria-pressed="false">★ Saved <span class="n" id="savedN">0</span></button>
+  </div>
+</div>
+<main>
+  <div class="meta-row"><span id="count" aria-live="polite"></span><span id="clear"></span></div>
+  <div class="feed" id="feed" aria-busy="false"></div>
+  <div class="status" id="status" aria-live="polite"></div>
+  <div id="sentinel" style="height:1px"></div>
+</main>
+<footer>NIGHTSHIFT · client-side job search in pure HTML/CSS/JS · data © <a href="https://www.themuse.com" target="_blank" rel="noreferrer">The Muse</a></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
