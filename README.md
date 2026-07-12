@@ -1,4 +1,4 @@
-# DRIFT — Job Board Aggregator (Vanilla JS)
+# DRIFT — Job Board Aggregator 
 
 Search remote & European tech jobs with **infinite scroll**, live filters, and
 saved listings. Built with **plain HTML, CSS, and JavaScript** — no React, no
